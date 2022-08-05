@@ -1,0 +1,39 @@
+# Plugin locale
+language: 'ru-ru'
+
+# Bed settings
+bed:
+  # If bed sets home point
+  sets-home: true
+  #If bed sets home point only if no home point is set
+  only-if-no-home: true
+
+# Storage formats (json, mysql)
+data-storage: 'json'
+
+mysql:
+  url: 'localhost'
+  user: 'user'
+  password: 'password'
+  database: 'database'
+
+# Delay before teleporting player in ticks
+warmup: 20
+
+# Cooldown for TP in ticks
+cooldown: 100
+
+# Cost per teleportation (Vault)
+cost: 1000
+
+# Premade particle effects id (-1 to disable)
+particle-id: 0
+
+# Cancel TP on movement
+cancel-on-movement: true
+
+# Radius to look for safe location
+check-radius: 5
+
+# Particle effect
+particle-effect: FLAME

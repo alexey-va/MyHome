@@ -1,0 +1,33 @@
+name: MyHome
+version: '${project.version}'
+main: mcfine.myhome.MyHome
+authors: [ Alexey ]
+description: Home plugin with invite option
+website: mcfine.ru
+api-version: 1.19
+depend: [ ProtocolLib ]
+softdepend: [ Vault ]
+loadbefore: [ CMI ]
+commands:
+  home:
+    description: Телепортирует вас домой.
+    aliases:
+      - hm
+    permission: mcfine.home
+    permission-message: У вас нет доступа к данной команде!
+  sethome:
+    description: Устанавливает точку дома.
+    permission: mcfine.home
+    permission-message: У вас нет доступа к данной команде!
+  delhome:
+    description: Удаляет точку дома.
+    permission: mcfine.home
+    permission-message: У вас нет доступа к данной команде!
+  home-of:
+    description: Телепортация в дом другого игрока.
+    permission: mcfine.home
+    permission-message: У вас нет доступа к данной команде!
+permissions:
+  myhome.use:
+    description: Allows plugin use.
+    default: true
